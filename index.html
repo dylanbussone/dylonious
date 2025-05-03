@@ -1,22 +1,43 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="color-scheme" content="light dark" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css"
-    />
+    <link rel="stylesheet" href="./pico.min.css" />
     <link rel="stylesheet" href="./index.css" />
-    <title>Dylonious</title>
+    <title>TODO</title>
   </head>
   <body>
-    <header>Dylonious</header>
+    <header>
+      <div class="grid social-grid">
+        <a href="#" class="contrast">Spotify</a>
+        <a href="#" class="contrast">Apple Music</a>
+        <a href="#" class="contrast">Soundcloud</a>
+        <a href="#" class="contrast">Bandcamp</a>
+        <a href="#" class="contrast">YouTube</a>
+      </div>
+    </header>
     <main>
-      <section>
+      <div id="hero-banner">
+        <img
+          src="/images/trees/1600.jpeg"
+          srcset="/images/trees/480.jpeg 480w, /images/trees/750.jpeg 750w, /images/trees/1000.jpeg 1000w /images/trees/1600.jpeg 1600w"
+          sizes="100vw"
+          alt="Hero image"
+        />
         <h1>Hello</h1>
+      </div>
+      <section class="container">
+        <p>
+          Dylonious (Dylan Bussone) is a guitarist and producer from Seattle,
+          WA.
+        </p>
       </section>
+      <section class="container">
+        TODO: spotify embeds for dylonious and waav include blurb about WAAV
+        being newest project with singer
+      </section>
+      <section class="container">TODO: embedded mailchimp form?</section>
     </main>
   </body>
 </html>
