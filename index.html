@@ -10,7 +10,11 @@
   <body>
     <header>
       <nav>
-        <ul></ul>
+        <ul>
+          <!-- TODO links don't take into account sticky header -->
+          <li><a href="#dylonious" class="contrast">Dylonious</a></li>
+          <li><a href="#waav" class="contrast">WAAV</a></li>
+        </ul>
         <ul>
           <li><a href="#" class="contrast">Spotify</a></li>
           <li><a href="#" class="contrast">Apple Music</a></li>
@@ -29,31 +33,61 @@
           alt="Hero image"
         />
         <div id="hero-overlay"></div>
-        <h1>Dylonious</h1>
       </div>
-      <section class="container">
+      <section class="container" id="dylonious">
         <article>
+          <!-- TODO proper article header/subheader tags -->
+          <h3>Dylonious</h3>
           <p>
             Dylonious (Dylan Bussone) is a guitarist and producer from Seattle,
             WA.
           </p>
+
+          <iframe
+            style="border-radius: 12px"
+            src="https://open.spotify.com/embed/track/67UlBjNTFYm2p2b8KAy873?utm_source=generator&theme=0"
+            width="100%"
+            height="352"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        </article>
+      </section>
+      <hr />
+      <section class="container" id="waav">
+        <article>
+          <!-- TODO proper article header/subheader tags -->
+          <h3>WAAV</h3>
+          <p>WAAV is a duo featuring Sam Rhoads and Dylan Bussone.</p>
+
+          <!-- TODO: something other than nav here -->
+          <nav>
+            <ul>
+              <li><a href="#" class="contrast">Spotify</a></li>
+              <li><a href="#" class="contrast">Apple Music</a></li>
+            </ul>
+          </nav>
+
+          <iframe
+            style="border-radius: 12px"
+            src="https://open.spotify.com/embed/track/67UlBjNTFYm2p2b8KAy873?utm_source=generator&theme=0"
+            width="100%"
+            height="352"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
         </article>
       </section>
       <hr />
       <section class="container">
-        <iframe
-          style="border-radius: 12px"
-          src="https://open.spotify.com/embed/track/67UlBjNTFYm2p2b8KAy873?utm_source=generator&theme=0"
-          width="100%"
-          height="352"
-          frameborder="0"
-          allowfullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"
-        ></iframe>
+        <p>Follow for the latest music</p>
+        TODO: embedded mailchimp form?
       </section>
-      <hr />
-      <section class="container">TODO: embedded mailchimp form?</section>
     </main>
+    <footer></footer>
   </body>
 </html>
