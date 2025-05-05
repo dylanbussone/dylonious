@@ -28,6 +28,15 @@ section {
   max-height: 90vh;
   margin: 0 auto var(--pico-block-spacing-vertical);
   overflow: hidden;
+  position: relative;
+  /* TODO fade out to bottom */
+
+  #hero-overlay {
+    background: var(--pico-background-color);
+    opacity: 0.33;
+    position: absolute;
+    inset: 0;
+  }
 
   h1 {
     position: absolute;
