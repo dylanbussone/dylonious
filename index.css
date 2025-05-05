@@ -1,16 +1,19 @@
-header {
+body > header {
   position: sticky;
   top: 0;
   background: var(--pico-background-color);
   border-bottom: 1px solid var(--pico-muted-border-color);
+  z-index: 1;
+  overflow: hidden;
+  padding: 0;
 
-  .social-grid {
-    text-align: center;
-
-    a {
-      text-decoration: none;
-    }
+  nav {
+    padding: 0 calc(2 * var(--pico-nav-element-spacing-horizontal));
   }
+}
+
+body > main {
+  padding-top: 0;
 }
 
 section {
@@ -22,9 +25,12 @@ section {
   align-items: center;
   justify-content: center;
   max-width: 1600px;
-  margin: 0 auto;
+  max-height: 90vh;
+  margin: 0 auto var(--pico-block-spacing-vertical);
+  overflow: hidden;
 
   h1 {
     position: absolute;
+    text-shadow: 1px 1px #000;
   }
 }
