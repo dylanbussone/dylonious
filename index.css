@@ -37,9 +37,4 @@ section {
     position: absolute;
     inset: 0;
   }
-
-  h1 {
-    position: absolute;
-    text-shadow: 1px 1px #000;
-  }
 }
