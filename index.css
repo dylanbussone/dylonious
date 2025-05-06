@@ -6,6 +6,7 @@ body > header {
   z-index: 1;
   overflow: hidden;
   padding: 0;
+  /* TODO better font */
 
   nav {
     padding: 0 calc(2 * var(--pico-nav-element-spacing-horizontal));
@@ -17,14 +18,16 @@ body > main {
 }
 
 section {
-  text-align: center;
+  &#dylonious,
+  &#waav {
+    scroll-margin-top: 64px; /* sticky header height */
+  }
 }
 
 #hero-banner {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 1600px;
   max-height: 90vh;
   margin: 0 auto var(--pico-block-spacing-vertical);
   overflow: hidden;
@@ -37,4 +40,9 @@ section {
     position: absolute;
     inset: 0;
   }
+}
+
+.social-icon svg {
+  max-width: 28px;
+  max-height: 28px;
 }
