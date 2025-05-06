@@ -1,20 +1,24 @@
+body {
+  background-image: url(/images/bulb.jpg);
+  /* background-position: center center; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
 body > header {
   position: sticky;
   top: 0;
-  background: var(--pico-background-color);
-  border-bottom: 1px solid var(--pico-muted-border-color);
   z-index: 1;
   overflow: hidden;
   padding: 0;
+  background: rgba(19, 23, 31, 0.8);
+  backdrop-filter: blur(10px);
   /* TODO better font */
 
   nav {
     padding: 0 calc(2 * var(--pico-nav-element-spacing-horizontal));
   }
-}
-
-body > main {
-  padding-top: 0;
 }
 
 section {
