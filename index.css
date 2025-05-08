@@ -1,5 +1,17 @@
+body,
+div,
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+a {
+  font-family: "Sansation", sans-serif;
+}
+
 body {
-  background-image: url(/images/bulb.jpg);
+  background-image: url(/images/road.webp);
   /* background-position: center center; */
   background-size: cover;
   background-repeat: no-repeat;
@@ -12,38 +24,47 @@ body > header {
   z-index: 1;
   overflow: hidden;
   padding: 0;
-  background: rgba(19, 23, 31, 0.8);
+  background: rgba(19, 23, 31, 0.84);
   backdrop-filter: blur(10px);
-  /* TODO better font */
 
   nav {
     padding: 0 calc(2 * var(--pico-nav-element-spacing-horizontal));
   }
 }
 
-section {
-  &#dylonious,
-  &#waav {
-    scroll-margin-top: 64px; /* sticky header height */
+section > article {
+  border-radius: 6px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  background: black;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
   }
 }
 
-#hero-banner {
+.spotify-iframe-group {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  max-height: 90vh;
-  margin: 0 auto var(--pico-block-spacing-vertical);
-  overflow: hidden;
-  position: relative;
-  /* TODO fade out to bottom */
+  flex-wrap: wrap;
+  gap: 1rem;
 
-  #hero-overlay {
-    background: var(--pico-background-color);
-    opacity: 0.33;
-    position: absolute;
-    inset: 0;
+  iframe.spotify-iframe {
+    flex: 1;
+    min-width: 300px;
   }
+}
+
+hgroup > :not(:first-child):last-child {
+  font-size: 0.9rem;
 }
 
 .social-icon svg {
