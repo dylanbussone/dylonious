@@ -12,7 +12,7 @@ a {
 
 body {
   background-image: url(/images/road.webp);
-  /* background-position: center center; */
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -40,7 +40,6 @@ section > article {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
   height: 0;
-  background: black;
 
   iframe {
     position: absolute;
