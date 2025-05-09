@@ -32,6 +32,15 @@ body > header {
   }
 }
 
+main > section {
+  &#dylonious {
+    margin-top: calc(5rem - var(--pico-block-spacing-vertical));
+  }
+  &#waav {
+    margin-top: 5rem;
+  }
+}
+
 section > article {
   border-radius: 6px;
 }
@@ -58,7 +67,6 @@ section > article {
 
   iframe.spotify-iframe {
     flex: 1;
-    min-width: 300px;
   }
 }
 
